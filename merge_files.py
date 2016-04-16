@@ -31,7 +31,6 @@ def main() :
     # Get lists of data from each file
     x_data = get_data("x.csv")
     y_data = get_data("y.csv")
-    print x_data 
     # Get IDs for each set of values
     x_ids = [x_data[i][0] for i in range(len(x_data))]
     y_ids = [y_data[i][0] for i in range(len(y_data))]
