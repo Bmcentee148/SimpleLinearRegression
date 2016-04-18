@@ -68,8 +68,10 @@ def main() :
     for y in y_dict:
         if y not in x_dict:
             print y
+    
     print "# values of X after removal: ", len(x_dict)
     print "# values of Y after removal: ", len(y_dict)
+    
     key_list = x_dict.keys()
     value_pairs = {key: (x_dict[key],y_dict[key]) for key in key_list}
     merge_to_csv(value_pairs, "xy.csv")
@@ -88,7 +90,8 @@ def main() :
     for key in y_kl :
         print key, removed_y_dict[key]
 
-    print "IDs Missing From Both Sets of Data: "
+    print "IDs Missing From Both Sets of Data"
+    print "Number Removed: ", len(missing_both)
     for i in missing_both:
         print i
     
